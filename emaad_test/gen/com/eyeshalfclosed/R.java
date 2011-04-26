@@ -20,9 +20,11 @@ public final class R {
     }
     public static final class id {
         public static final int gridview=0x7f060000;
+        public static final int mySimpleXYPlot=0x7f060001;
     }
     public static final class layout {
         public static final int main=0x7f030000;
+        public static final int quickinfo=0x7f030001;
     }
     public static final class raw {
         public static final int oauth=0x7f040000;

@@ -18,5 +18,13 @@
             </intent-filter>
         </activity>
         
+        <activity android:name=".QuickInfoActivity"
+                  android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="com.eyeshalfclosed.QuickInfo" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
     </application>
 </manifest>

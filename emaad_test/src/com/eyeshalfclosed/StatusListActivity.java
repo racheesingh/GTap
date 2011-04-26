@@ -2,6 +2,7 @@ package com.eyeshalfclosed;
 
 import android.app.Activity;
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.ViewGroup;
@@ -38,6 +39,12 @@ public class StatusListActivity extends Activity {
                 Toast.makeText(getBaseContext(), 
                         "pic" + (position + 1) + " selected", 
                         Toast.LENGTH_SHORT).show();
+                Intent showQuickInfo = new Intent("com.eyeshalfclosed.QuickInfo");
+                Bundle params = new Bundle();
+                params.putString("candidateName", "Candidate" + (position + 1));
+                showQuickInfo.putExtras(params);
+                showQuickInfo.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                startActivity(showQuickInfo);
             }
         });        
 
